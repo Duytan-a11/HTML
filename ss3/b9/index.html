@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Duytan</title>
 </head>
 <body>
     <h2>Form Đăng Kí Thành Viên Hội Khăn Giấy Ướt :))</h2>
@@ -17,7 +17,7 @@
         <label for="gender">Giới tính:</label>
         <input type="radio" id="man" name="gender" value="man">
         <label for="man">Nam</label>
-        <input type="radio" id="feman" name="gender" value="man">
+        <input type="radio" id="feman" name="gender" value="feman">
         <label for="feman">Nữ</label><br>
 
         <label for="sdt">Số điện thoại:</label>
@@ -43,7 +43,34 @@
         <textarea name="skills" id="skills" rows="3" cols="20"></textarea><br>
 
         <label for="freetime">Thời gian rảnh:</label>
-        
+        <span class="checkmark"></span>
+        <input type="checkbox" id="s" name="s" value="s">
+        <label for="s">Sáng</label>
+        <input type="checkbox" id="c" name="c" value="c">
+        <label for="c">Chiều</label>
+        <input type="checkbox" id="t" name="t" value="t">
+        <label for="t">Tối</label><br>
+
+        <label for="why">Lý do tham gia nhóm:</label>
+        <textarea name="why" id="why" rows="3" cols="20"></textarea><br>
+
+        <label for="favorite-color">Màu yêu thích:</label>
+        <span class="color-picker">
+            <input type="color" id="favorite-color" name="favorite-color" value="#000000">
+        </span><br>
+
+        <label for="news">Đăng ký nhận bản tin:</label>
+        <span class="checkmark"></span>
+        <input type="checkbox" id="yes" name="yes" value="yes">
+        <label for="yes">Có</label><br>
+
+        <label for="tb">Nhận thông báo qua email:</label>
+        <input type="radio" id="e" name="tb" value="e">
+        <label for="e">Email</label>
+        <input type="radio" id="sms" name="tb" value="sms">
+        <label for="sms">SMS</label><br>
+
+        <input type="submit" value="Đăng ký thành viên">
     </form>
 </body>
 </html>
