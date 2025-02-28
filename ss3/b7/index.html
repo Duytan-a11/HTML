@@ -7,57 +7,84 @@
 </head>
 <body>
     <form action="duytan@gmail.com" method="post">
-        <label for="name">Họ và tên:</label>
-        <input type="text" id="name" name="name"><br>
+        <table border="0">
+            <tr>
+                <td><b><label for="name">Họ và tên:</label></b></td>
+                <td><input type="text" id="name" name="name"></td><br>
+            </tr>
+            <tr>
+                <td><b><label for="email">Email:</label></b></ts>
+                <td><input type="email" id="email" name="email"></td><br>
+            </tr>
+            
+            <tr>
+                <td><b><label for="date">Ngày sinh:</label></b></td>
+                <td><b><input type="date" id="date" name="date"></b></td><br>
+            </tr>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email"><br>
+            <tr>
+                <td><b><label for="gender">Giới tính:</label></b></td>
+                <td><b>
+                    <input type="radio" id="man" name="gender" value="male">
+                    <label for="male">Nam</label>
+                    <input type="radio" id="feman" name="gender" value="female">
+                    <label for="female">Nữ</label><br>
+                </b></td>
+            </tr>
 
-        <label for="date">Ngày sinh:</label>
-        <input type="date" id="date" name="date"><br>
+            <tr>
+                <td><b><label for="number">Số điện thoại:</label></b></td>
+                <td><input type="text" id="number" name="number"></td><br>
+            </tr>
 
-        <label for="gender">Giới tính:</label>
-        <input type="radio" id="man" name="gender" value="male">
-        <label for="male">Nam</label>
-        <input type="radio" id="feman" name="gender" value="female">
-        <label for="female">Nữ</label><br>
+            <tr>
+                <td><b><label for="major">Chuyên ngành:</label></b></td>
+                <td><input type="text" id="major" name="major"></td><br>
+            </tr>
 
-        <label for="number">Số điện thoại:</label>
-        <input type="text" id="number" name="number"><br>
+            <tr>
+                <td><b><label for="year">Năm học:</label></b></td>
+                <td><input type="text" id="year" name="year"></td><br>
+            </tr>
 
-        <label for="major">Chuyên ngành:</label>
-        <input type="text" id="major" name="major"><br>
+            <tr>
+                <td><b><label for="GPA">Điểm GPA:</label></b></td>
+                <td><input type="gpa" name="gpa" id="gpa"></td><br>
+            </tr>
 
-        <label for="year">Năm học:</label>
-        <input type="text" id="year" name="year"><br>
+            <tr>
+                <td><b><label for="address">Địa chỉ:</label></b></td>
+                <td><textarea name="address" id="address" rows="3" cols="20"></textarea></td><br>
+            </tr>
 
-        <label for="GPA">Điểm GPA:</label>
-        <input type="gpa" name="gpa" id="gpa"><br>
+            <tr>
+                <td><b><label for="class">Lớp học:</label></b></td>
+                <td><b>
+                    <select name="class" id="class">
+                        <option value="1">Lớp 1</option>
+                        <option value="2">Lớp 2</option>
+                        <option value="3">Lớp 3</option>
+                        <option value="4">Lớp 4</option>
+                        <option value="5">Lớp 5</option>
+                        <option value="6">Lớp 6</option>
+                        <option value="7">Lớp 7</option>
+                        <option value="8">Lớp 8</option>
+                        <option value="9">Lớp 9</option>
+                        <option value="10">Lớp 10</option>
+                        <option value="11">Lớp 11</option>
+                        <option value="12">Lớp 12</option>
+                        <option value="daihoc">Đại học</option>
+                    </select><br>
+                </b></td>
+            </tr>
 
-        <label for="address">Địa chỉ:</label>
-        <textarea name="address" id="address" rows="3" cols="20"></textarea><br>
+            <tr>
+                <td><b><label for="date-time">Ngày đăng ký học:</label></b></td>
+                <td><input type="datetime-local" id="date-time" name="date-time"></td>
+            </tr>
+        </table>
 
-        <label for="class">Lớp học:</label>
-        <select name="class" id="class">
-            <option value="1">Lớp 1</option>
-            <option value="2">Lớp 2</option>
-            <option value="3">Lớp 3</option>
-            <option value="4">Lớp 4</option>
-            <option value="5">Lớp 5</option>
-            <option value="6">Lớp 6</option>
-            <option value="7">Lớp 7</option>
-            <option value="8">Lớp 8</option>
-            <option value="9">Lớp 9</option>
-            <option value="10">Lớp 10</option>
-            <option value="11">Lớp 11</option>
-            <option value="12">Lớp 12</option>
-            <option value="daihoc">Đại học</option>
-        </select><br>
-
-        <label for="date-time">Ngày đăng ký học:</label>
-        <input type="datetime-local" id="date-time" name="date-time">
-
-        <input type="submit" value="Gửi thông tin">
+        <b><input type="submit" value="Gửi thông tin"></b>
     </form>
 </body>
 </html>

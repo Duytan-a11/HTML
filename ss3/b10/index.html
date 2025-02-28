@@ -7,69 +7,111 @@
 </head>
 <body>
     <form action="duytan@gmail.com" method="post">
-        <label for="name">Họ và tên:</label>
-        <input type="text" id="name" name="name"><br>
+        <table>
+            <tr>
+                <td><label for="name">Họ và tên:</label></td>
+                <td><input type="text" id="name" name="name"></td>
+            </tr>
 
-        <label for="date">Ngày sinh:</label>
-        <input type="date" id="date" name="date"><br>
+            <tr>
+                <td><label for="date">Ngày sinh:</label></td>
+                <td><input type="date" id="date" name="date"></td>
+            </tr>
+            
+            <tr>
+                <td><label for="gender">Giới tính:</label></td>
+                <td>
+                    <input type="radio" id="man" name="gender" value="man">
+                    <label for="man">Nam</label>
+                    <input type="radio" id="feman" name="gender" value="feman">
+                    <label for="feman">Nữ</label>
+                </td>
+            </tr>
 
-        <label for="gender">Giới tính:</label>
-        <input type="radio" id="man" name="gender" value="man">
-        <label for="man">Nam</label>
-        <input type="radio" id="feman" name="gender" value="feman">
-        <label for="feman">Nữ</label><br>
+            <tr>
+                <td><label for="sdt">Số điện thoại:</label></td>
+                <td><input type="text" id="sdt" name="sdt"></td>
+            </tr>
 
-        <label for="sdt">Số điện thoại:</label>
-        <input type="text" id="sdt" name="sdt"><br>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email"></td>
+            </tr>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email"><br>
+            <tr>
+                <td><label for="tencti">Tên công ty:</label></td>
+                <td><input type="text" id="tencti" name="tencti"></td>
+            </tr>
 
-        <label for="tencti">Tên công ty:</label>
-        <input type="text" id="tencti" name="tencti"><br>
+            <tr>
+                <td><label for="vaitro">Vai trò trong công ty:</label></td>
+                <td>
+                    <select name="vaitro" id="vaitro">
+                        <option value="ceo">Giám đốc điều hành (CEO)</option>
+                        <option value="pceo">Phó giám đốc</option>
+                        <option value="tp">Trưởng phòng</option>
+                        <option value="ql">Quản lí</option>
+                        <option value="nv">Nhân viên</option>
+                    </select>
+                </td>
+            </tr>
 
-        <label for="vaitro">Vai trò trong công ty:</label>
-        <select name="vaitro" id="vaitro">
-            <option value="ceo">Giám đốc điều hành (CEO)</option>
-            <option value="pceo">Phó giám đốc</option>
-            <option value="tp">Trưởng phòng</option>
-            <option value="ql">Quản lí</option>
-            <option value="nv">Nhân viên</option>
-        </select><br>
+            <tr>
+                <td><label for="quymo">Quy mô công ty:</label></td>
+                <td>
+                    <select name="quymo" id="quymo">
+                        <option value="nho">Doanh nghiệp nhỏ</option>
+                        <option value="vua">Doanh nghiệp vừa</option>
+                        <option value="lon">Doanh nghiệp lớn</option>
+                        <option value="siuto">Doanh nghiệp siêu to</option>
+                    </select>
+                </td>
+            </tr>
 
-        <label for="quymo">Quy mô công ty:</label>
-        <select name="quymo" id="quymo">
-            <option value="nho">Doanh nghiệp nhỏ</option>
-            <option value="vua">Doanh nghiệp vừa</option>
-            <option value="lon">Doanh nghiệp lớn</option>
-            <option value="siuto">Doanh nghiệp siêu to</option>
-        </select><br>
+            <tr>
+                <td><label for="cv">Ngành nghề công ty:</label></td>
+                <td><input type="text" id="cv" name="cv"></td>
+            </tr>
 
-        <label for="cv">Ngành nghề công ty:</label>
-        <input type="text" id="cv" name="cv"><br>
+            <tr>
+                <td><label for="why">Lý do tham gia câu lạc bộ:</label></td>
+                <td><input type="text" id="why" name="why"></td>
+            </tr>
 
-        <label for="why">Lý do tham gia câu lạc bộ:</label>
-        <input type="text" id="why" name="why"><br>
+            <tr>
+                <td><label for="knghiem">Kinh nghiệm đào tạo:</label></td>
+                <td><input type="text" id="knghiem" name="knghiem"></td>
+            </tr>
+            
+            <tr>
+                <td><label for="muctieu">Mục tiêu khi tham gia câu lạc bộ:</label></td>
+                <td><input type="text" id="muctieu" name="muctieu"></td>
+            </tr>
 
-        <label for="knghiem">Kinh nghiệm đào tạo:</label>
-        <input type="text" id="knghiem" name="knghiem"><br>
+            <tr>
+                <td><label for="skien">Chương trình sự kiện muốn tham gia:</label></td>
+                <td>
+                    <input type="checkbox" id="n" name="n" value="n">
+                    <label for="n">Networking</label>
+                    <input type="checkbox" id="w" name="w" value="w">
+                    <label for="w">Workshops</label>
+                    <input type="checkbox" id="h" name="h" value="h">
+                    <label for="h">Hội thảo</label>
+                </td>
+            </tr>
 
-        <label for="muctieu">Mục tiêu khi tham gia câu lạc bộ:</label>
-        <input type="text" id="muctieu" name="muctieu"><br>
+            <tr>
+                <td><label for="dk">Đăng ký nhận bản tin:</label></td>
+                <td>
+                    <input type="checkbox" id="yes" name="yes">
+                    <label for="yes">Có</label>
+                </td>
+            </tr>
 
-        <label for="skien">Chương trình sự kiện muốn tham gia:</label>
-        <input type="checkbox" id="n" name="n" value="n">
-        <label for="n">Networking</label>
-        <input type="checkbox" id="w" name="w" value="w">
-        <label for="w">Workshops</label>
-        <input type="checkbox" id="h" name="h" value="h">
-        <label for="h">Hội thảo</label><br>
-
-        <label for="dk">Đăng ký nhận bản tin:</label>
-        <input type="checkbox" id="yes" name="yes">
-        <label for="yes">Có</label>
-
-        <input type="submit" value="Đăng ký hội viên">
-
+            <tr>
+                <td colspan="2"><input type="submit" value="Đăng ký hội viên"></td>
+            </tr>
+        </table>
+    </form>
 </body>
 </html>

@@ -8,70 +8,114 @@
 <body>
     <h2>Biểu mẫu thu thập thông tin CCCD</h2>
     <form action="duytan@gmail.com" method="post">
-        <label for="name">Họ và tên:</label>
-        <input type="text" id="name" name="name"><br>
+        <table>
+            <tr>
+                <td><label for="name">Họ và tên:</label></td>
+                <td><input type="text" id="name" name="name"></td>
+            </tr>
 
-        <label for="date">Ngày sinh:</label>
-        <input type="date" id="date" name="date"><br>
+            <tr>
+                <td><label for="date">Ngày sinh:</label></td>
+                <td><input type="date" id="date" name="date"></td>
+            </tr>
 
-        <label for="gender">Giới tính:</label>
-        <input type="radio" id="man" name="gender" value="man">
-        <label for="man">Nam</label>
-        <input type="radio" id="feman" name="gender" value="feman">
-        <label for="feman">Nữ</label><br>
+            <tr>
+                <td><label for="gender">Giới tính:</label></td>
+                <td>
+                    <input type="radio" id="man" name="gender" value="man">
+                    <label for="man">Nam</label>
+                    <input type="radio" id="feman" name="gender" value="feman">
+                    <label for="feman">Nữ</label>
+                </td>
+            </tr>
 
-        <label for="cccd">Số căn cước công dân:</label>
-        <input type="text" id="number" name="cccd"><br>
+            <tr>
+                <td><label for="cccd">Số căn cước công dân:</label></td>
+                <td><input type="text" id="number" name="cccd"></td>
+            </tr>
 
-        <label for="datecccd">Ngày cấp:</label>
-        <input type="datecccd" id="date" name="date"><br>
+            <tr>
+                <td><label for="datecccd">Ngày cấp:</label></td>
+                <td><input type="date" id="datecccd" name="datecccd"></td>
+            </tr>
 
-        <label for="addresscccd">Nơi cấp:</label>
-        <input type="text" id="addresscccd" name="addresscccd"><br>
+            <tr>
+                <td><label for="addresscccd">Nơi cấp:</label></td>
+                <td><input type="text" id="addresscccd" name="addresscccd"></td>
+            </tr>
 
-        <label for="number">Số điện thoại:</label>
-        <input type="text" id="number" name="number"><br>
+            <tr>
+                <td><label for="number">Số điện thoại:</label></td>
+                <td><input type="text" id="number" name="number"></td>
+            </tr>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email"><br>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email"></td>
+            </tr>
 
-        <label for="address">Địa chỉ thường trú:</label>
-        <textarea name="address" id="address" rows="3" cols="20"></textarea><br>
+            <tr>
+                <td><label for="address">Địa chỉ thường trú:</label></td>
+                <td><textarea name="address" id="address" rows="3" cols="20"></textarea></td>
+            </tr>
 
-        <label for="address-2">Địa chỉ tạm trú:</label>
-        <textarea name="address-2" id="address-2" rows="3" cols="20"></textarea><br>
+            <tr>
+                <td><label for="address-2">Địa chỉ tạm trú:</label></td>
+                <td><textarea name="address-2" id="address-2" rows="3" cols="20"></textarea></td>
+            </tr>
 
-        <label for="loai-cccd">Loại căng cước công dân:</label>
-        <input type="radio" id="new" name="loai-cccd" value="new">
-        <label for="new">Căn cước công dân mới</label>
-        <input type="radio" id="old" name="loai-cccd" value="old">
-        <label for="old">Căn cước công dân mới</label><br>
+            <tr>
+                <td><label for="loai-cccd">Loại căn cước công dân:</label></td>
+                <td>
+                    <input type="radio" id="new" name="loai-cccd" value="new">
+                    <label for="new">Căn cước công dân mới</label>
+                    <input type="radio" id="old" name="loai-cccd" value="old">
+                    <label for="old">Căn cước công dân cũ</label>
+                </td>
+            </tr>
 
-        <label for="ethnic-group">Dân tộc:</label>
-        <input type="text" id="ethnic-group" name="ethnic-group"><br>
+            <tr>
+                <td><label for="ethnic-group">Dân tộc:</label></td>
+                <td><input type="text" id="ethnic-group" name="ethnic-group"></td>
+            </tr>
 
-        <label for="religion">Tôn giáo:</label>
-        <input type="text" id="religion" name="religion"><br>
+            <tr>
+                <td><label for="religion">Tôn giáo:</label></td>
+                <td><input type="text" id="religion" name="religion"></td>
+            </tr>
 
-        <label for="nationality">Quốc tịch:</label>
-        <input type="text" id="nationality" name="nationality" value="Việt Nam" readonly><br>
+            <tr>
+                <td><label for="nationality">Quốc tịch:</label></td>
+                <td><input type="text" id="nationality" name="nationality" value="Việt Nam" readonly></td>
+            </tr>
 
-        <label for="father-mother">Họ và tên cha/mẹ:</label>
-        <input type="text" id="father-mother" name="father-mother"><br>
+            <tr>
+                <td><label for="father-mother">Họ và tên cha/mẹ:</label></td>
+                <td><input type="text" id="father-mother" name="father-mother"></td>
+            </tr>
 
-        <label for="cccd-ft-mt">Số CMND/CCCD của cha/mẹ:</label>
-        <input type="text" id="cccd-ft-mt" name="cccd-ft-mt"><br>
+            <tr>
+                <td><label for="cccd-ft-mt">Số CMND/CCCD của cha/mẹ:</label></td>
+                <td><input type="text" id="cccd-ft-mt" name="cccd-ft-mt"></td>
+            </tr>
 
-        <label for="province-city">Tỉnh/Thành phố:</label>
-        <select name="province-city" id="province-city">
-            <option value="t/tp">Chọn Tỉnh/Thành phố</option>
-            <option value="hcm">TP Hồ Chí Minh</option>
-            <option value="hn">Hà Nội</option>
-            <option value="qn">Quảng Ngãi</option>
-            <option value="bt">Bến Tre</option>
-        </select><br>
-
-        <input type="submit" value="Gửi thông tin">
+            <tr>
+                <td><label for="province-city">Tỉnh/Thành phố:</label></td>
+                <td>
+                    <select name="province-city" id="province-city">
+                        <option value="t/tp">Chọn Tỉnh/Thành phố</option>
+                        <option value="hcm">TP Hồ Chí Minh</option>
+                        <option value="hn">Hà Nội</option>
+                        <option value="qn">Quảng Ngãi</option>
+                        <option value="bt">Bến Tre</option>
+                    </select>
+                </td>
+            </tr>
+            
+            <tr>
+                <td colspan="2"><input type="submit" value="Gửi thông tin"></td>
+            </tr>
+        </table>
     </form>
 </body>
 </html>
