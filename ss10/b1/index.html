@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/044cb39f80.js" crossorigin="anonymous"></script>
+    <title>Sport News</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            height: 100vh;
+            background-color: rgb(255, 255, 255);
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            background-color: #e5e5e5;
+            padding: 20px;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+        }
+        .link {
+            display: flex;
+            gap: 20px;
+            margin-left: 20px;
+        }
+        .link a {
+            font-size: 14px;
+            font-weight: normal;
+            color: rgb(142, 142, 142);
+            text-decoration: none;
+        }
+        a:hover {
+            color: black;
+        }
+        .search-button {
+            background-color: #a9a9a9;
+            color: #ffffff;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            margin-left: 50px;
+        }
+        .search-button:hover {
+            background-color: #808080;
+        }
+        .sport-news {
+            font-family: 'Brush Script MT', cursive;
+            font-size: 3em;
+            font-weight: normal;
+            color: #000000;
+            margin-right: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="sport-news">
+                Sport News
+            </div>
+            <div class="link">
+                <a href="#">Home</a>
+                <a href="#">Category</a>
+                <a href="#">Trending News</a>
+                <a href="#">Recent News</a>
+                <a href="#">Clubs Ranking</a>
+                <a href="#">Sports Article</a>
+            </div>
+            <button class="search-button"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
+        </div>
+    </div>
+</body>
+</html>
