@@ -1,6 +1,6 @@
-let num1 = Number(prompt("Nhập số đầu tiên: "))
-let num2 = Number(prompt("Nhập số thứ hai: "))
-let max = Math.max(num1,num2)
-let min = Math.min(num1,num2)
-let random =(Math.random()*(max - min)+min).toFixed(0)
-document.writeln(random)
+let num1 = prompt("Nhập số thứ nhất:");
+num1 = parseFloat(num1);
+let num2 = prompt("Nhập số thứ hai:");
+num2 = parseFloat(num2);
+soNgauNhien = Math.floor(Math.random() * (num2 - num1 + 1)) + num1;
+alert("Số ngẫu nhiên là: " + soNgauNhien);
