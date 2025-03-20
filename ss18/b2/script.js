@@ -1,15 +1,14 @@
-let number = prompt("Nhập vào điểm: ");
-number = Number(number);
+let math = Number(prompt("Nhập điểm toán: "))
+let literature = Number(prompt("Nhập điểm văn: "))
+let english = Number(prompt("Nhập điểm tiếng anh: "))
+let score = (math + literature + english)/3
 
-if (number >= 8) {
-    console.log("Giỏi");
-}
-else if (number >= 6.5 && number < 7.9) {
-    console.log("Khá");
-}
-else if (number >= 5 && number < 6.4) {
-    console.log("Trung bình");
-}
-else {
-    console.log("Yếu");
+if(score>=8) {
+    document.writeln("Giỏi")
+}else if (score >=6.5) {
+    document.writeln("Khá")
+}else if (score >=5.0) {
+    document.writeln("Trung Bình")
+}else {
+    document.writeln("Yếu")
 }

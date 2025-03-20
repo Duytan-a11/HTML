@@ -21,26 +21,25 @@ if (hundred > 0 && ten === 0 && one > 0) {
 }
 
 if (ten === 1) result += (result ? " " : "") + "mười";
-else if (ten === 2) result += (result ? " " : "") + "Hai mươi";
-else if (ten === 3) result += (result ? " " : "") + "Ba mươi";
-else if (ten === 4) result += (result ? " " : "") + "Bốn mươi";
-else if (ten === 5) result += (result ? " " : "") + "Năm mươi";
-else if (ten === 6) result += (result ? " " : "") + "Sáu mươi";
-else if (ten === 7) result += (result ? " " : "") + "Bảy mươi";
-else if (ten === 8) result += (result ? " " : "") + "Tám mươi";
-else if (ten === 9) result += (result ? " " : "") + "Chín mươi";
+else if (ten === 2) result += (result ? " " : "") + "hai mươi";
+else if (ten === 3) result += (result ? " " : "") + "ba mươi";
+else if (ten === 4) result += (result ? " " : "") + "bốn mươi";
+else if (ten === 5) result += (result ? " " : "") + "năm mươi";
+else if (ten === 6) result += (result ? " " : "") + "sáu mươi";
+else if (ten === 7) result += (result ? " " : "") + "bảy mươi";
+else if (ten === 8) result += (result ? " " : "") + "tám mươi";
+else if (ten === 9) result += (result ? " " : "") + "chín mươi";
 
 if (one === 1 && ten > 1) result += " mốt";
-else if (one === 1) result += (result ? " " : "") + "Một";  
-else if (one === 2) result += (result ? " " : "") + "Hai";  
-else if (one === 3) result += (result ? " " : "") + "Ba";  
-else if (one === 4) result += (result ? " " : "") + "Bốn";  
+else if (one === 1) result += (result ? " " : "") + "hai";  
+else if (one === 3) result += (result ? " " : "") + "ba";  
+else if (one === 4) result += (result ? " " : "") + "bốn";  
 else if (one === 5 && ten > 0) result += " lăm";
-else if (one === 5) result += (result ? " " : "") + "Năm";  
-else if (one === 6) result += (result ? " " : "") + "Sáu";  
-else if (one === 7) result += (result ? " " : "") + "Bảy";  
-else if (one === 8) result += (result ? " " : "") + "Tám";  
-else if (one === 9) result += (result ? " " : "") + "Chín";  
+else if (one === 5) result += (result ? " " : "") + "năm";  
+else if (one === 6) result += (result ? " " : "") + "sáu";  
+else if (one === 7) result += (result ? " " : "") + "bảy";  
+else if (one === 8) result += (result ? " " : "") + "tám";  
+else if (one === 9) result += (result ? " " : "") + "chín";  
 
 result = result.charAt(0).toUpperCase() + result.slice(1);
 console.log(result);
