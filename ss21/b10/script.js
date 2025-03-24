@@ -9,16 +9,16 @@ else {
     let num = 2;
 
     while (count < n) {
-        let check = true;
+        let isPrime = true;
 
         for (let i = 2; i * i <= num; i++) {
             if (num % i === 0) {
-                check = false;
+                isPrime = false;
                 break;
             }
         }
 
-        if (check) {
+        if (isPrime) {
             document.writeln(`${num} `);
             count++;
         }
