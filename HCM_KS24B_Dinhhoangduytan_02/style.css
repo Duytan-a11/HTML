@@ -1,0 +1,261 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  16px 112px;
+}
+header p
+{
+    font-size: 30px;
+    font-weight: bold;
+}
+.nav
+{
+    display: flex;
+    align-items: center;
+}
+nav a
+{
+    text-decoration: none;
+    color: gray;
+    margin-right: 24px;
+    font-size: 16px;
+}
+.nav img
+{
+    margin-left: 24px;
+    margin-right: 16px;
+    font-size: 36px;
+}
+.nav button
+{
+    border: none;
+    border-radius: 10px;
+    color:white;
+    background-color: black;
+    padding: 6px 16px;
+    font-size: 16px;
+}
+.aboutMe
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 96px 80px 96px 112px;
+}
+.blockLeft
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.hi
+{
+    font-weight: bold;
+    font-size: 60px;
+}
+.about
+{
+    font-size: 16px;
+    color: gray;
+    width: 768px;
+}
+.locate p
+{
+    font-size: 16px;
+    color: gray;
+}
+.logoIcon i
+{
+    margin-right: 4px;
+}
+.aboutMe img
+{
+    margin-right: 72px;
+    margin-bottom: 40px;
+    border: 3px solid white;
+    box-shadow: 40px 40px lightgray;
+}
+.skills
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Btn
+{
+    border: none;
+    border-radius: 6px;
+    margin: 0 auto;
+    padding: 4px 20px;
+    margin-bottom: 16px;
+}
+.skills p,
+.work p
+{
+    color: gray;
+}
+.skillBox
+{
+    display: flex;
+    gap: 110px;
+    margin-top: 48px;
+    justify-content: space-between;
+}
+.work
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 96px 80px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+.workBox
+{
+    display: flex;
+    margin: 48px 64px;
+}
+.workBox img
+{
+    margin-left: 64px;
+}
+.detail
+{
+    padding: 48px;
+}
+.detailTitle
+{
+    font-size: 20px;
+}
+.lorem
+{
+    margin: 24px 0;
+    width: 480px;
+    line-height: 40px;
+}
+footer
+{
+    text-align: center;
+    color: gray;
+    padding: 24px 80px;
+    margin-top: 94px;
+}
+.baricon
+{
+    display: none;
+}
+@media( max-width: 480px)
+{
+    *
+    {
+        max-width: 480px;
+    }
+    main
+    {
+        position: relative;
+    }
+    header
+    {
+        padding: 16px;
+    }
+    .nav
+    {
+        display: none;
+    }
+    .baricon
+    {
+        display: block;
+    }
+    .aboutMe
+    {
+        flex-direction: column;
+    }
+
+    .aboutMe img
+    {
+        margin: 0 auto;
+        order: -1;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .me
+    {
+        width: 480px;
+
+    }
+    .hi
+    {
+        font-size: 36px;
+    }
+    .about
+    {
+        width: 70%;
+        margin-bottom: 48px;
+    }
+    .locate
+    {
+        margin-bottom: 48px;
+
+    }
+    .skill
+    {
+        width: 480px;
+        display: block;
+    }
+    .skillBox
+    {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 50px;
+    }
+    .changePosition
+    {
+        grid-column: 3/3;
+    }
+    .work
+    {
+        display: flex;
+        flex-direction: column;
+        width: 480px;
+        margin: 24px auto;
+    }
+    .work img
+    {
+        margin: 0 auto;
+        order: -1
+    }
+    .workBox
+    {
+        margin: 24px 0;
+        flex-direction: column;
+    }
+    .detail
+    {
+        width: 480px;
+        padding: 100px 100px;
+    }
+    .detailSkillBox button
+    {
+        width: 35%;
+    }
+    .FigmaLogo
+    {
+        display: none;
+    }
+    .lorem
+    {
+        width: 300px;
+    }
+    footer
+    {
+        width: 480px;
+        padding: 0;
+    }
+}
