@@ -1,26 +1,28 @@
-let n = Number(prompt("Nhập vào số phần tử trong mảng"));
-let digitChars = [];
-let sum = 0;
+let n = Number(prompt(`nhap so luong phan tu cua mang`));
+let array = [];
+for (let i = 1; i <= n; i++) {
+  array[i] = Number(prompt(`nhap phan tu thu ${i} vao trong mang`));
+}
+let sum = 0,
+  dem = 0;
+for (let i = 0; i <= n; i++) {
+  if (isNaN(array[i])) {
+    continue;
+  } else {
+    sum = sum + Number(array[i]);
+    dem++;
+  }
+}
 
-if (isNaN(n) || n < 0 && n !== Number) {
-    console.log("Số lượng phần tử không hợp lệ!");
-} else if (n === 0) {
-    console.log("Không có phần tử");
-} else {
-    let arr = [];
-    for (let i = 0; i < n; i++) {
-        let input = prompt(`Nhập vào phần tử thứ ${i + 1}`);
-        arr.push(input);
-
-        if (!isNaN(input) && input.trim() !== "") {
-            digitChars.push(input);
-            sum += Number(input);
-        }
-    }
-
-    if (digitChars.length > 0) {
-        console.log(`${sum}`);
-    } else {
-        console.log("Không có phần tử nào là số");
-    }
+if (dem === 0) {
+  console.log("Khong co phan tu nao la so");
+}
+if (n === 0) {
+  console.log("mang khong co phan tu");
+}
+if (n < 0) {
+  console.log("so luong pt hem duoc em");
+}
+if (dem > 0) {
+  console.log(sum);
 }
