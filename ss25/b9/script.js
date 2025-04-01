@@ -20,7 +20,7 @@ function checkEmail(email) {
     }
 
     if (users.includes(email)) {
-        return "Tài khoản đã tồn tại!";
+        return "Tài khoản đã tồn tại!";p
     }
 
     users.push(email);
